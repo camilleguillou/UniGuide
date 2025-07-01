@@ -1,0 +1,101 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Personality Quiz
+{% endblock %}
+
+{% block main %}
+    <div class="header">
+        <h1 class="pink-title">Personality Quiz</h1>
+        <br>
+    </div>
+
+
+
+    <form action="{{ url_for('quiz1') }}" method="post" class="quiz-form">
+    <!-- Questions -->
+
+    <!-- Question 1 -->
+        <h2><label for="1q1">Question 1:</label></h2>
+        <h3>Do you prefer dogs, cats, or ducks?</h3>
+        <label ><input type="radio" name="1q1" value="A"> Dogs</label>
+        <label><input type="radio" name="1q1" value="B"> Cats</label>
+        <label><input type="radio" name="1q1" value="C"> Ducks</label>
+        <br> <br>
+
+    <!-- Question 2 -->
+        <h2><label for="1q2">Question 2:</label></h2>
+        <h3> Are you more logical, creative, or empathetic?</h3>
+        <label><input type="radio" name="1q2" value="A"> Logical</label>
+        <label><input type="radio" name="1q2" value="B"> Creative </label>
+        <label><input type="radio" name="1q2" value="C"> Empathetic </label>
+        <br> <br>
+
+    <!-- Question 3 -->
+        <h2><label for="1q3">Question 3:</label></h2>
+        <h3> Would you rather spend your free time outdoors, reading, or solving puzzles? </h3>
+        <label><input type="radio" name="1q3" value="A"> Outdoors</label>
+        <label><input type="radio" name="1q3" value="B"> Reading</label>
+        <label><input type="radio" name="1q3" value="C"> Solving Puzzles</label>
+        <br> <br>
+
+    <!-- Question 4 -->
+        <h2><label for="1q4">Question 4:</label></h2>
+        <h3> Are you more introverted, extroverted, or ambiverted? </h3>
+        <label><input type="radio" name="1q4" value="A"> Introverted</label>
+        <label><input type="radio" name="1q4" value="B"> Extroverted</label>
+        <label><input type="radio" name="1q4" value="C"> Ambiverted</label>
+        <br> <br>
+
+    <!-- Question 5 -->
+        <h2><label for="1q5">Question 5:</label></h2>
+        <h3> Which appeals to you the most: facts, feelings, or freedom? </h3>
+        <label><input type="radio" name="1q5" value="A"> Facts</label>
+        <label><input type="radio" name="1q5" value="B"> Feelings </label>
+        <label><input type="radio" name="1q5" value="C"> Freedom</label>
+        <br> <br>
+
+    <!-- Question 6 -->
+        <h2><label for="1q6">Question 6:</label></h2>
+        <h3> Which super power would you want? </h3>
+        <label><input type="radio" name="1q6" value="A"> Teleportation</label>
+        <label><input type="radio" name="1q6" value="B"> Breath underwater</label>
+        <label><input type="radio" name="1q6" value="C"> Read minds</label>
+        <br> <br>
+
+    <!-- Question 7 -->
+        <h2><label for="1q7">Question 7:</label></h2>
+        <h3> Which describes your ideal workspace: a lab, an office, or the outdoors? </h3>
+        <label><input type="radio" name="1q7" value="A"> A lab </label>
+        <label><input type="radio" name="1q7" value="B"> An office</label>
+        <label><input type="radio" name="1q7" value="C"> The outdoors</label>
+        <br>
+
+    <!-- Question 8 -->
+        <h2><label for="1q8">Question 8:</label></h2>
+        <h3> Do you enjoy following rules, breaking them, or bending them? </h3>
+        <label><input type="radio" name="1q8" value="A"> Following rules</label>
+        <label><input type="radio" name="1q8" value="B"> Breaking them</label>
+        <label><input type="radio" name="1q8" value="C"> Bending them </label>
+        <br><br>
+
+    <!-- Question 9 -->
+        <h2><label for="1q9">Question 9:</label></h2>
+        <h3> What’s your approach to challenges: solving, inspiring, or organizing? </h3>
+        <label><input type="radio" name="1q9" value="A"> Inspiring</label>
+        <label><input type="radio" name="1q9" value="B"> Organizing </label>
+        <label><input type="radio" name="1q9" value="C"> Solving</label>
+        <br><br>
+
+    <!-- Question 10 -->
+        <h2><label for="1q10">Question 10:</label></h2>
+        <h3> Do you enjoy structured routines, flexible schedules, or spontaneity? </h3>
+        <label><input type="radio" name="1q10" value="A"> Structured routines</label>
+        <label><input type="radio" name="1q10" value="B"> Flexible schedules</label>
+        <label><input type="radio" name="1q10" value="C"> Spontaneity </label>
+        <br><br>
+
+        <button class="btn custom-pink mt-3" type="submit">Next Quiz</button>
+    </form>
+
+{% endblock %}

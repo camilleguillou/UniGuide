@@ -1,0 +1,28 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Quiz Results
+{% endblock %}
+
+{% block main %}
+    <h1 class="pink-title">Your Quiz Results</h1>
+    <br>
+    <table class="table result-table">
+        <thead>
+            <tr>
+                <th>Faculty</th>
+                <th>Major</th>
+                <th>Country</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>{{ faculty }}</td>
+                <td>{{ major }}</td>
+                <td>{{ country }}</td>
+            </tr>
+        </tbody>
+    </table>
+    <br><br>
+    <a href="/" class="btn custom-pink mt-3">Back to Home</a>
+{% endblock %}

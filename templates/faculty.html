@@ -1,0 +1,20 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Faculty quiz
+{% endblock %}
+
+
+{% block main %}
+    <div class="header">
+        <h1 class="pink-title"> Welcome to the Faculty Quiz </h1>
+        <br>
+        <h5 style="max-width: 800px; margin: auto; line-height: 1.5;"> This quiz will help you discover which university faculty best aligns with your interests, personality, and aspirations.
+        <br> You will start by answering a set of personality questions and then "Would you rather" questions.
+        <br> <br>
+            Answer honestly and we will find the best faculty fit for you! </h5>
+        <form action="{{ url_for('quiz1') }}">
+            <button class="btn custom-pink mt-3" type="submit">Start Quiz</button>
+        </form>
+
+{% endblock %}

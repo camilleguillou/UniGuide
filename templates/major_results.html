@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Major Quiz Results
+{% endblock %}
+
+{% block main %}
+    <h1 class="pink-title">Quiz Results</h1>
+    <br>
+    <h3>Your Recommended Faculty: {{ faculty if faculty else 'Not determined' }}</h3>
+
+    <h3>Your Suggested Major: {{ major if major else 'Not determined' }}</h3>
+    <br>
+    <h5> This major is a great fit for your skills and passions, allowing you to dive deeper into subjects
+        that inspire you, build specialized expertise, and prepare for exciting future opportunities.</h5>
+{% endblock %}

@@ -1,0 +1,24 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Faculty Results
+{% endblock %}
+
+{% block main %}
+    <div class="header">
+        <h1 class="pink-title">Your Recommended Faculty</h1>
+        <br>
+    </div>
+
+    <h5>Based on your answers, you would fit best in the <strong>{{ faculty }}</strong> faculty!</h5>
+    <br>
+
+    <h5> This faculty aligns with your strengths and interests. It will help you develop critical thinking skills,
+        and offer you many opportunities to explore your curiosity </h5>
+    <br><br>
+
+    <a href="{{ url_for('major') }}" class="btn custom-pink mt-3">Proceed to Major Quiz</a>
+
+    <a href="/" class="btn custom-pink mt-3">Back to Home</a>
+
+{% endblock %}

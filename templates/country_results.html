@@ -1,0 +1,22 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Country Results
+{% endblock %}
+
+{% block main %}
+    <div class="header">
+        <h1 class="pink-title">Your Recommended Study Destination</h1>
+        <br>
+    </div>
+
+    <h3>Based on your answers, the country you should study in is <strong>{{ country }}</strong> !</h3>
+    <br>
+
+    <h5> This country aligns both with your cultural preferences and academic aspirations.
+        Studying in this destination will offer you an enriching an dfullfilling university experience! </h5>
+    <br><br>
+
+    <a href="/" class="btn custom-pink mt-3">Back to Home</a>
+
+{% endblock %}

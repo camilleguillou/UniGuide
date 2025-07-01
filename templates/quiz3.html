@@ -1,0 +1,342 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Major Determination Quiz
+{% endblock %}
+
+{% block main %}
+    <div class="header">
+        <h1 class="pink-title">Major Quiz</h1>
+        <br>
+    </div>
+
+    <form action="{{ url_for('quiz3') }}" method="POST" class="quiz-form">
+        {% if faculty == "Arts" %}
+
+    <!-- Questions for Arts Faculty Results-->
+            <h2><label for="Artsq1">Question 1:</label></h2>
+            <h3>Which of these activities would you enjoy most?</h3>
+            <label><input type="radio" name="Artsq1" value="A"> Painting a landscape or crafting a sculpture</label>
+            <label><input type="radio" name="Artsq1" value="B"> Reflecting on life's deeper meaning</label>
+            <label><input type="radio" name="Artsq1" value="C"> Writing a short story or poem</label>
+            <br><br>
+
+            <h2><label for="Artsq2">Question 2:</label></h2>
+            <h3>What inspires you the most?</h3>
+            <label><input type="radio" name="Artsq2" value="A"> Colors, shapes, and forms around you</label>
+            <label><input type="radio" name="Artsq2" value="B"> Profound questions that challenge assumptions</label>
+            <label><input type="radio" name="Artsq2" value="C"> Beautifully crafted words or narratives</label>
+            <br><br>
+
+            <h2><label for="Artsq3">Question 3:</label></h2>
+            <h3>How do you express your creativity?</h3>
+            <label><input type="radio" name="Artsq3" value="A"> Through visual art or physical creations</label>
+            <label><input type="radio" name="Artsq3" value="B"> Through abstract or intellectual discussion</label>
+            <label><input type="radio" name="Artsq3" value="C"> Through written works or storytelling</label>
+            <br><br>
+
+            <h2><label for="Artsq4">Question 4:</label></h2>
+            <h3>What type of experience do you enjoy the most?</h3>
+            <label><input type="radio" name="Artsq4" value="A"> Visiting an art gallery or creating something</label>
+            <label><input type="radio" name="Artsq4" value="B"> Engaging in a deep debate or reading philosophy</label>
+            <label><input type="radio" name="Artsq4" value="C"> Reading a captivating book or attending a poetry slam</label>
+            <br><br>
+
+            <h2><label for="Artsq5">Question 5:</label></h2>
+            <h3>Which type of environment feels most energizing to you?</h3>
+            <label><input type="radio" name="Artsq5" value="A"> A studio or workshop</label>
+            <label><input type="radio" name="Artsq5" value="B"> A quiet space for reflection</label>
+            <label><input type="radio" name="Artsq5" value="C"> A library or a cozy writing nook</label>
+            <br><br>
+
+            <h2><label for="Artsq6">Question 6:</label></h2>
+            <h3>What kind of problem-solving do you prefer?</h3>
+            <label><input type="radio" name="Artsq6" value="A"> Solving problems visually or spatially</label>
+            <label><input type="radio" name="Artsq6" value="B"> Exploring abstract or ethical dilemmas</label>
+            <label><input type="radio" name="Artsq6" value="C"> Finding the perfect way to phrase an idea </label>
+            <br><br>
+
+            <h2><label for="Artsq7">Question 7:</label></h2>
+            <h3>What kind of feedback do you value most?</h3>
+            <label><input type="radio" name="Artsq7" value="A"> Input on your artistic technique or aesthetics</label>
+            <label><input type="radio" name="Artsq7" value="B"> Discussion that challenges your ideas</label>
+            <label><input type="radio" name="Artsq7" value="C"> Praise for your narrative or written style</label>
+            <br><br>
+
+            <h2><label for="Artsq8">Question 8:</label></h2>
+            <h3>What kind of books or media do you prefer?</h3>
+            <label><input type="radio" name="Artsq8" value="A"> Books about visual arts or design</label>
+            <label><input type="radio" name="Artsq8" value="B"> Philosophical texts or essays</label>
+            <label><input type="radio" name="Artsq8" value="C"> Novels, poems, or plays</label>
+            <br><br>
+
+            <h2><label for="Artsq9">Question 9:</label></h2>
+            <h3>What do you value most in your work?</h3>
+            <label><input type="radio" name="Artsq9" value="A"> Creativity and aesthetics</label>
+            <label><input type="radio" name="Artsq9" value="B"> Deep meaning and intellectual rigor</label>
+            <label><input type="radio" name="Artsq9" value="C"> Emotional expression or connection</label>
+            <br><br>
+
+            <h2><label for="Artsq10">Question 10:</label></h2>
+            <h3>What kind of conversation do you enjoy the most?</h3>
+            <label><input type="radio" name="Artsq10" value="A"> Sharing ideas for creative projects</label>
+            <label><input type="radio" name="Artsq10" value="B"> Debating philosophical concepts</label>
+            <label><input type="radio" name="Artsq10" value="C"> Talking about the meaning of stories or poems</label>
+            <br><br>
+
+            <h2><label for="Artsq11">Question 11:</label></h2>
+            <h3>What kind of course would excite you the most?</h3>
+            <label><input type="radio" name="Artsq11" value="A"> Art history or studio art</label>
+            <label><input type="radio" name="Artsq11" value="B"> Ethics or metaphysics</label>
+            <label><input type="radio" name="Artsq11" value="C"> Creative writing or literary analysis</label>
+            <br><br>
+
+            <h2><label for="Artsq12">Question 12:</label></h2>
+            <h3>How do you prefer to spend your free time?</h3>
+            <label><input type="radio" name="Artsq12" value="A"> Crafting, drawing, or painting</label>
+            <label><input type="radio" name="Artsq12" value="B"> Reading or thinking about philosophical topics</label>
+            <label><input type="radio" name="Artsq12" value="C"> Writing poetry or journaling</label>
+            <br><br>
+
+            <h2><label for="Artsq13">Question 13:</label></h2>
+            <h3>How do you approach challenges?</h3>
+            <label><input type="radio" name="Artsq13" value="A"> By experimenting with visual ideas</label>
+            <label><input type="radio" name="Artsq13" value="B"> By reflecting deeply on the issue</label>
+            <label><input type="radio" name="Artsq13" value="C"> By exploring the narrative behind the problem</label>
+            <br><br>
+
+            <h2><label for="Artsq14">Question 14:</label></h2>
+            <h3>What motivates you most in a career?</h3>
+            <label><input type="radio" name="Artsq14" value="A"> Making a visual or artistic impact</label>
+            <label><input type="radio" name="Artsq14" value="B"> Exploring complex ideas and sharing insights</label>
+            <label><input type="radio" name="Artsq14" value="C"> Telling stories or communicating emotions</label>
+            <br><br>
+
+            <h2><label for="Artsq15">Question 15:</label></h2>
+            <h3>How would you describe your ideal weekend?</h3>
+            <label><input type="radio" name="Artsq15" value="A"> Painting, sculpting, or visiting an art exhibit</label>
+            <label><input type="radio" name="Artsq15" value="B"> Reading a philosophical book or having deep discussions</label>
+            <label><input type="radio" name="Artsq15" value="C"> Writing a story or attending a book reading</label>
+            <br><br>
+
+        {% elif faculty == "STEM" %}
+    <!-- Questions for STEM Faculty Results-->
+
+            <h2><label for="STEMq1">Question 1:</label></h2>
+            <h3>When faced with a challenge, what’s your instinctive approach?</h3>
+            <label><input type="radio" name="STEMq1" value="A"> Break it into smaller logical steps</label>
+            <label><input type="radio" name="STEMq1" value="B"> Test practical solutions in real-time</label>
+            <label><input type="radio" name="STEMq1" value="C"> Explore how natural processes relate to it</label>
+            <br><br>
+
+            <h2><label for="STEMq2">Question 2:</label></h2>
+            <h3>What drives your curiosity?</h3>
+            <label><input type="radio" name="STEMq2" value="A"> Understanding how abstract systems work</label>
+            <label><input type="radio" name="STEMq2" value="B"> Seeing ideas transform into tangible results</label>
+            <label><input type="radio" name="STEMq2" value="C"> Observing how living systems interact</label>
+            <br><br>
+
+            <h2><label for="STEMq3">Question 3:</label></h2>
+            <h3>Which activity sounds more rewarding to you?</h3>
+            <label><input type="radio" name="STEMq3" value="A"> Developing tools that solve everyday problems</label>
+            <label><input type="radio" name="STEMq3" value="B"> Improving the efficiency of existing designs</label>
+            <label><input type="radio" name="STEMq3" value="C"> Discovering how life adapts to its environment </label>
+            <br><br>
+
+            <h2><label for="STEMq4">Question 4:</label></h2>
+            <h3>How do you usually think through problems?</h3>
+            <label><input type="radio" name="STEMq4" value="A"> By finding patterns and applying logic</label>
+            <label><input type="radio" name="STEMq4" value="B"> By experimenting with different approaches</label>
+            <label><input type="radio" name="STEMq4" value="C"> By asking how the problem fits into a bigger system</label>
+            <br><br>
+
+            <h2><label for="STEMq5">Question 5:</label></h2>
+            <h3>When working on a project, what keeps you motivated?</h3>
+            <label><input type="radio" name="STEMq5" value="A"> Knowing it can improve efficiency or processes</label>
+            <label><input type="radio" name="STEMq5" value="B"> Seeing a prototype or design come to life</label>
+            <label><input type="radio" name="STEMq5" value="C"> Understanding how it benefits people or the planet</label>
+            <br><br>
+
+            <h2><label for="STEMq6">Question 6:</label></h2>
+            <h3>If you had to pick an area to research, which would you choose?</h3>
+            <label><input type="radio" name="STEMq6" value="A"> Investigating how data can be used to predict future events</label>
+            <label><input type="radio" name="STEMq6" value="B"> Exploring how mechanical systems can be improved</label>
+            <label><input type="radio" name="STEMq6" value="C"> Studying the relationship between organisms and their environment</label>
+            <br><br>
+
+            <h2><label for="STEMq7">Question 7:</label></h2>
+            <h3>Which of these statements resonates most with you?</h3>
+            <label><input type="radio" name="STEMq7" value="A"> I believe technology has the power to change the world</label>
+            <label><input type="radio" name="STEMq7" value="B"> I think solving practical problems is the key to progress</label>
+            <label><input type="radio" name="STEMq7" value="C"> I think understanding living systems can unlock the secrets of life</label>
+            <br><br>
+
+            <h2><label for="STEMq8">Question 8:</label></h2>
+            <h3>What is your preferred way of learning new things?</h3>
+            <label><input type="radio" name="STEMq8" value="A"> Through structured lessons and logical frameworks</label>
+            <label><input type="radio" name="STEMq8" value="B"> By hands-on experimentation and testing</label>
+            <label><input type="radio" name="STEMq8" value="C"> By observing real-world examples and patterns</label>
+            <br><br>
+
+            <h2><label for="STEMq9">Question 9:</label></h2>
+            <h3>How do you feel about working with abstract concepts?</h3>
+            <label><input type="radio" name="STEMq9" value="A"> I enjoy abstract thinking and looking for patterns</label>
+            <label><input type="radio" name="STEMq9" value="B"> I find it exciting to create tangible prototypes from abstract ideas</label>
+            <label><input type="radio" name="STEMq9" value="C"> I enjoy looking at how abstract concepts play out in real-life scenarios</label>
+            <br><br>
+
+            <h2><label for="STEMq10">Question 10:</label></h2>
+            <h3>Do you find creating apps, improving energy systems, or studying DNA more exciting?</h3>
+            <label><input type="radio" name="STEMq10" value="A"> Creating apps</label>
+            <label><input type="radio" name="STEMq10" value="B"> Improving energy systems</label>
+            <label><input type="radio" name="STEMq10" value="C"> Studying DNA</label>
+            <br><br>
+
+            <h2><label for="STEMq11">Question 11:</label></h2>
+            <h3>What drives you to keep going when working on a difficult project?</h3>
+            <label><input type="radio" name="STEMq11" value="A"> The potential to improve efficiency and make processes smarter</label>
+            <label><input type="radio" name="STEMq11" value="B"> The satisfaction of seeing a project become tangible and functional</label>
+            <label><input type="radio" name="STEMq11" value="C"> The curiosity of discovering something new about the natural world</label>
+            <br><br>
+
+            <h2><label for="STEMq12">Question 12:</label></h2>
+            <h3>What do you value most when solving a problem?</h3>
+            <label><input type="radio" name="STEMq12" value="A"> Efficiency and optimization</label>
+            <label><input type="radio" name="STEMq12" value="B"> Creativity and innovation</label>
+            <label><input type="radio" name="STEMq12" value="C"> Understanding how everything fits into a larger system</label>
+            <br><br>
+
+            <h2><label for="STEMq13">Question 13:</label></h2>
+            <h3>What type of change would you like to see in the world?</h3>
+            <label><input type="radio" name="STEMq13" value="A"> Technological advancements that make life easier and more sustainable</label>
+            <label><input type="radio" name="STEMq13" value="B"> Innovations that solve practical problems in our daily lives</label>
+            <label><input type="radio" name="STEMq13" value="C"> New insights into the complexity of life and the environment</label>
+            <br><br>
+
+            <h2><label for="STEMq14">Question 14:</label></h2>
+            <h3>How do you feel about failure?</h3>
+            <label><input type="radio" name="STEMq14" value="A"> It’s an opportunity to learn and improve systems</label>
+            <label><input type="radio" name="STEMq14" value="B"> It’s a part of the creative process, leading to better solutions</label>
+            <label><input type="radio" name="STEMq14" value="C"> It’s a chance to understand why something didn’t work in nature</label>
+            <br><br>
+
+            <h2><label for="STEMq15">Question 15:</label></h2>
+            <h3>If you could invent something, what would it be?</h3>
+            <label><input type="radio" name="STEMq15" value="A"> A software that solves a major societal issue</label>
+            <label><input type="radio" name="STEMq15" value="B"> A machine that performs a complex task with ease</label>
+            <label><input type="radio" name="STEMq15" value="C"> A tool that helps researchers unlock secrets of the human body</label>
+            <br><br>
+
+
+        {% else %}
+    <!-- Questions for Social Science Faculty Results-->
+
+            <h2><label for="SociSq1">Question 1:</label></h2>
+            <h3>When thinking about human behavior, which approach seems most fitting to you?</h3>
+            <label><input type="radio" name="SociSq1" value="A"> Analyzing patterns in behavior across different contexts</label>
+            <label><input type="radio" name="SociSq1" value="B"> Examining the role of institutions in shaping behavior</label>
+            <label><input type="radio" name="SociSq1" value="C"> Understanding how choices are influenced by incentives and constraints</label>
+            <br><br>
+
+            <h2><label for="SociSq2">Question 2:</label></h2>
+            <h3>How do you approach problem-solving?</h3>
+            <label><input type="radio" name="SociSq2" value="A"> Through qualitative analysis and considering cultural nuances</label>
+            <label><input type="radio" name="SociSq2" value="B"> By weighing pros and cons through structured arguments</label>
+            <label><input type="radio" name="SociSq2" value="C"> By breaking the problem down into measurable, quantitative aspects</label>
+            <br><br>
+
+            <h2><label for="SociSq3">Question 3:</label></h2>
+            <h3>When faced with a societal issue, which question would you most likely ask?</h3>
+            <label><input type="radio" name="SociSq3" value="A"> What historical and cultural factors have shaped this problem?</label>
+            <label><input type="radio" name="SociSq3" value="B"> What are the political forces at play here and who holds power?</label>
+            <label><input type="radio" name="SociSq3" value="C"> What are the economic costs and benefits of addressing this issue?</label>
+            <br><br>
+
+            <h2><label for="SociSq4">Question 4:</label></h2>
+            <h3>Which aspect of a debate interests you the most?</h3>
+            <label><input type="radio" name="SociSq4" value="A"> Exploring differing cultural perspectives and their impact</label>
+            <label><input type="radio" name="SociSq4" value="B"> Understanding the logical structure and strategic use of arguments</label>
+            <label><input type="radio" name="SociSq4" value="C"> Analyzing the potential economic outcomes of proposed solutions</label>
+            <br><br>
+
+            <h2><label for="SociSq5">Question 5:</label></h2>
+            <h3>If you were to conduct research, what would be your first step?</h3>
+            <label><input type="radio" name="SociSq5" value="A"> Collecting narratives and interviews to understand people’s lived experiences</label>
+            <label><input type="radio" name="SociSq5" value="B"> Reviewing policy documents to understand existing frameworks</label>
+            <label><input type="radio" name="SociSq5" value="C"> Gathering statistical data to find trends and correlations</label>
+            <br><br>
+
+            <h2><label for="SociSq6">Question 6:</label></h2>
+            <h3>What motivates you when approaching a challenging project?</h3>
+            <label><input type="radio" name="SociSq6" value="A"> The chance to uncover new perspectives and cultural insights</label>
+            <label><input type="radio" name="SociSq6" value="B"> The opportunity to debate and shape policies that influence outcomes</label>
+            <label><input type="radio" name="SociSq6" value="C"> The potential to use data to drive effective decision-making</label>
+            <br><br>
+
+            <h2><label for="SociSq7">Question 7:</label></h2>
+            <h3>What do you think is the most significant factor in shaping a society?</h3>
+            <label><input type="radio" name="SociSq7" value="A"> The collective values and beliefs shared by its members</label>
+            <label><input type="radio" name="SociSq7" value="B"> The balance of power and authority within institutions</label>
+            <label><input type="radio" name="SociSq7" value="C"> The economic systems that determine how resources are allocated</label>
+            <br><br>
+
+            <h2><label for="SociSq8">Question 8:</label></h2>
+            <h3>How do you feel about risk-taking in decision-making?</h3>
+            <label><input type="radio" name="SociSq8" value="A"> It's important to understand the underlying cultural norms before making a move</label>
+            <label><input type="radio" name="SociSq8" value="B"> It's about weighing political advantages and disadvantages</label>
+            <label><input type="radio" name="SociSq8" value="C"> It should be based on clear data and a rational cost-benefit analysis</label>
+            <br><br>
+
+            <h2><label for="SociSq9">Question 9:</label></h2>
+            <h3>Which statement resonates with you the most when thinking about society?</h3>
+            <label><input type="radio" name="SociSq9" value="A"> Societal change starts with individuals and their evolving beliefs</label>
+            <label><input type="radio" name="SociSq9" value="B"> Society is influenced by the decisions made at the highest levels of government</label>
+            <label><input type="radio" name="SociSq9" value="C"> Society is driven by the interactions between individuals and markets</label>
+            <br><br>
+
+            <h2><label for="SociSq10">Question 10:</label></h2>
+            <h3>How do you approach understanding human behavior in groups?</h3>
+            <label><input type="radio" name="SociSq10" value="A"> By focusing on rituals, traditions, and social norms</label>
+            <label><input type="radio" name="SociSq10" value="B"> By analyzing how power dynamics influence behavior</label>
+            <label><input type="radio" name="SociSq10" value="C"> By observing how individuals make choices based on resources available</label>
+            <br><br>
+
+            <h2><label for="SociSq11">Question 11:</label></h2>
+            <h3>If you were given a set of data, what would you focus on first?</h3>
+            <label><input type="radio" name="SociSq11" value="A"> Patterns that reflect cultural behaviors or trends</label>
+            <label><input type="radio" name="SociSq11" value="B"> Relationships that reveal underlying political power structures</label>
+            <label><input type="radio" name="SociSq11" value="C"> Trends that can be used to predict economic outcomes</label>
+            <br><br>
+
+            <h2><label for="SociSq12">Question 12:</label></h2>
+            <h3>Which of these is most important in understanding historical events?</h3>
+            <label><input type="radio" name="SociSq12" value="A"> The cultural context and human experiences that shaped the event</label>
+            <label><input type="radio" name="SociSq12" value="B"> The political decisions and strategies of key figures</label>
+            <label><input type="radio" name="SociSq12" value="C"> The economic conditions and their impact on the event</label>
+            <br><br>
+
+            <h2><label for="SociSq13">Question 13:</label></h2>
+            <h3>How do you feel about the influence of individual actions on larger systems?</h3>
+            <label><input type="radio" name="SociSq13" value="A"> Individuals shape culture and traditions that influence society</label>
+            <label><input type="radio" name="SociSq13" value="B"> Individuals can impact political systems through protest or engagement</label>
+            <label><input type="radio" name="SociSq13" value="C"> Individuals make choices that accumulate to affect the economy</label>
+            <br><br>
+
+            <h2><label for="SociSq14">Question 14:</label></h2>
+            <h3>When you read about a societal problem, what concerns you the most?</h3>
+            <label><input type="radio" name="SociSq14" value="A"> How cultural values or traditions are challenged or evolve</label>
+            <label><input type="radio" name="SociSq14" value="B"> How it might impact power structures or governance</label>
+            <label><input type="radio" name="SociSq14" value="C"> How it affects the distribution of resources and wealth</label>
+            <br><br>
+
+            <h2><label for="SociSq15">Question 15:</label></h2>
+            <h3>If you had to recommend a policy, what would you base it on?</h3>
+            <label><input type="radio" name="SociSq15" value="A"> Understanding the cultural context of the people affected</label>
+            <label><input type="radio" name="SociSq15" value="B"> Understanding the implications and who benefits from it</label>
+            <label><input type="radio" name="SociSq15" value="C"> Understanding the impact and efficiency of the policy</label>
+            <br><br>
+        {% endif %}
+        <button class="btn custom-pink mt-3" type="submit">See my results</button>
+    </form>
+
+{% endblock %}

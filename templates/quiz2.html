@@ -1,0 +1,99 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    "Would You Rather" Quiz
+{% endblock %}
+
+{% block main %}
+    <div class="header">
+        <h1 class="pink-title">"Would you rather..."</h1>
+        <br> <br>
+    </div>
+
+    <form action="{{ url_for('quiz2') }}" method="POST" class="quiz-form">
+    <!-- Questions -->
+
+    <!-- Question 1 -->
+        <h2><label for="2q1">Question 1:</label></h2>
+        <h3> Would you rather write an essay, do 100 push-ups, or paint a picture? </h3>
+        <label><input type="radio" name="2q1" value="A"> Write an essay</label>
+        <label><input type="radio" name="2q1" value="B"> Do 100 push-ups</label>
+        <label><input type="radio" name="2q1" value="C"> Paint a picture</label>
+        <br><br>
+
+    <!-- Question 2 -->
+        <h2><label for="2q2">Question 2:</label></h2>
+        <h3> Would you rather solve a math problem, learn 50 capitals by tomorrow, or write a short story? </h3>
+        <label><input type="radio" name="2q2" value="A"> Solve a math problem</label>
+        <label><input type="radio" name="2q2" value="B"> Learn 50 capitals by tomorrow</label>
+        <label><input type="radio" name="2q2" value="C"> Write a short story</label>
+        <br><br>
+
+    <!-- Question 3 -->
+        <h2><label for="2q3">Question 3:</label></h2>
+        <h3> Would you rather lead a team project, work on it solo, or mentor someone else? </h3>
+        <label><input type="radio" name="2q3" value="A"> Lead a team project</label>
+        <label><input type="radio" name="2q3" value="B"> Work solo</label>
+        <label><input type="radio" name="2q3" value="C"> Mentor someone else</label>
+        <br><br>
+
+    <!-- Question 4 -->
+        <h2><label for="2q4">Question 4:</label></h2>
+        <h3> Would you rather perform on stage, write music, or direct a show? </h3>
+        <label><input type="radio" name="2q4" value="A"> Perform on stage</label>
+        <label><input type="radio" name="2q4" value="B"> Write music</label>
+        <label><input type="radio" name="2q4" value="C"> Direct a show</label>
+        <br><br>
+
+    <!-- Question 5 -->
+        <h2><label for="2q5">Question 5:</label></h2>
+        <h3> Would you rather debate an issue, research it quietly, or discuss it in a group? </h3>
+        <label><input type="radio" name="2q5" value="A"> Debate an issue</label>
+        <label><input type="radio" name="2q5" value="B"> Research quietly</label>
+        <label><input type="radio" name="2q5" value="C"> Discuss it in a group</label>
+        <br><br>
+
+    <!-- Question 6 -->
+        <h2><label for="2q6">Question 6:</label></h2>
+        <h3> Would you rather plan a farm, build a bridge, or design a park? </h3>
+        <label><input type="radio" name="2q6" value="A"> Plan a farm</label>
+        <label><input type="radio" name="2q6" value="B"> Build a bridge</label>
+        <label><input type="radio" name="2q6" value="C"> Design a park</label>
+        <br><br>
+
+    <!-- Question 7 -->
+        <h2><label for="2q7">Question 7:</label></h2>
+        <h3> Would you rather read Shakespeare, analyze a dataset, or watch a documentary? </h3>
+        <label><input type="radio" name="2q7" value="A"> Read Shakespeare</label>
+        <label><input type="radio" name="2q7" value="B"> Analyze a dataset</label>
+        <label><input type="radio" name="2q7" value="C"> Watch a documentary</label>
+        <br><br>
+
+    <!-- Question 8 -->
+        <h2><label for="2q8">Question 8:</label></h2>
+        <h3> Would you rather argue a case in court, write a policy report, or mediate a dispute? </h3>
+        <label><input type="radio" name="2q8" value="A"> Argue a case in court (like Harvey in Suits!)</label>
+        <label><input type="radio" name="2q8" value="B"> Write a policy report</label>
+        <label><input type="radio" name="2q8" value="C"> Mediate a dispute </label>
+        <br><br>
+
+    <!-- Question 9 -->
+        <h2><label for="2q9">Question 9:</label></h2>
+        <h3> Would you rather teach a class, compose a song, or write a blog post? </h3>
+        <label><input type="radio" name="2q9" value="A"> Teach a class (like Jess in New Girl)</label>
+        <label><input type="radio" name="2q9" value="B"> Compose a song (like Mozart)</label>
+        <label><input type="radio" name="2q9" value="C"> Write a blog post </label>
+        <br><br>
+
+    <!-- Question 10 -->
+        <h2><label for="2q10">Question 10:</label></h2>
+        <h3> Would you rather experiment in a lab, work on a startup, or create an app? </h3>
+        <label><input type="radio" name="2q10" value="A"> Experiment in a lab</label>
+        <label><input type="radio" name="2q10" value="B"> Work on a startup </label>
+        <label><input type="radio" name="2q10" value="C"> Create an app </label>
+        <br><br>
+
+        <button class="btn custom-pink mt-3" type="submit">See my faculty results</button>
+    </form>
+
+{% endblock %}

@@ -1,0 +1,30 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Quiz Introduction
+{% endblock %}
+
+{% block main %}
+    <div class="header">
+        <h1 class="pink-title"> Welcome to UniGuide</h1>
+        <br>
+<h5 style="max-width: 750px; margin: auto; line-height: 1.5;">
+    <strong>UniGuide</strong> is a web app designed to help you choose a university faculty, major, and country that match your interests.
+    <br> <br>
+    Not sure where to begin? Start with the <strong>Faculty Quiz</strong> to find out whether Arts, STEM, or Social Sciences suits you best. Then, try the <strong>Major Quiz</strong> to explore programs within that faculty.
+    <br><br>
+    Still wondering where to study? The <strong>Country Quiz</strong> helps you find your ideal study destination based on your goals and preferences.
+    <br>
+    Good luck!
+</h5>
+
+        <form action="{{ url_for('faculty') }}">
+            <button class="btn custom-pink mt-3" type="submit">Take Faculty Quiz (followed by the Major Quiz)</button>
+        </form>
+
+        <form action="{{ url_for('country') }}">
+            <button class="btn custom-pink mt-3" type="submit">Take Country Quiz</button>
+        </form>
+
+    </div>
+{% endblock %}

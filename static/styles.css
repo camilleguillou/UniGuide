@@ -1,0 +1,158 @@
+
+nav .navbar-brand {
+    font-size: xx-large;
+}
+
+form.quiz-form {
+    max-width: 700px;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+a {
+    text-align: center;
+}
+
+main {
+    margin-top: 30px;
+}
+
+body {
+    background-image: url("https://i.pinimg.com/736x/a9/2e/47/a92e470a778f045d2f79db047b9c1180.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+.pink-title {
+    color: #d63384;
+    font-weight: bold;
+}
+
+
+
+.result-table {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    margin: auto;
+    width: 80%;
+}
+
+.result-table th,
+.result-table td {
+    background-color: transparent;
+    color: #333;
+    text-align: center;
+    border: 1px solid #ddd;
+    padding: 12px;
+}
+
+.result-table th {
+    font-weight: bold;
+    color: #d63384;
+}
+
+
+.custom-pink {
+    background-color: rgba(255, 182, 193, 0.3);
+    border: 2px solid #ff69b4;
+    color: #d63384;
+    padding: 12px 24px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 12px;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 4px 10px rgba(214, 51, 132, 0.2);
+    transition: all 0.3s ease-in-out;
+}
+
+
+
+.custom-pink:hover {
+    background-color: rgba(255, 182, 193, 0.6);
+    box-shadow: 0 6px 14px rgba(214, 51, 132, 0.3);
+    transform: scale(1.03);
+}
+
+.custom-pink:active {
+    transform: scale(0.97);
+    box-shadow: 0 2px 6px rgba(214, 51, 132, 0.2);
+}
+
+.glassy-navbar {
+    background: linear-gradient(
+        to right,
+        rgba(255, 255, 255, 0.6),
+        rgba(255, 192, 203, 0.4)
+    );
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255, 192, 203, 0.4);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    border-radius: 0 0 12px 12px;
+    padding: 0.75rem 1rem;
+}
+
+h2 {
+    font-size: 1.8rem;
+    color: #d63384;
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+h3 {
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+h5.intro-text {
+    max-width: 700px;
+    margin: auto;
+    line-height: 1.4;
+    font-size: 1rem;
+}
+
+input[type="radio"] + label,
+input[type="radio"] + span,
+input[type="radio"] + br {
+    display: inline-block;
+    margin-bottom: 0.5rem;
+}
+
+
+form br + br {
+    margin-bottom: 1.5rem;
+}
+
+label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: 1rem;
+    margin-bottom: 0.75rem;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+input[type="radio"] {
+    margin: 0;
+    transform: scale(1.2);
+}
+
+
+.question-label {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #e91e63;
+    margin-bottom: 0.5rem;
+}
+
+

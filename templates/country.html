@@ -1,0 +1,26 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Country quiz
+{% endblock %}
+
+
+{% block main %}
+
+    <div class="header">
+        <h1 class="pink-title"> Welcome to the Country Quiz </h1>
+        <br>
+        <h5 style="max-width: 800px; margin: auto; line-height: 1.5;"> Determine which country you should study in.
+        <br> Stuyding in a country that suits you is important. This quiz is here to find the best fit for you.
+        <br> <br>
+            Answer honestly and we will find the study location that fits you best! </h5>
+
+
+
+        <form action="{{ url_for('quiz4') }}">
+            <button class="btn custom-pink mt-3" type="submit">Start Quiz</button>
+        </form>
+    </div>
+
+
+{% endblock %}

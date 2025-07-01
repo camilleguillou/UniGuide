@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Major quiz
+{% endblock %}
+
+
+{% block main %}
+
+    <div class="header">
+        <h1 class="pink-title"> Welcome to the Major Quiz </h1>
+        <br>
+        <h5 style="max-width: 800px; margin: auto; line-height: 1.5;"> Choosing a major is an important decision, and this quiz is here to guide you.</h5>
+        <br>
+        <a href="{{ url_for('quiz3') }}" class="btn custom-pink mt-3">Start Quiz</a>
+    </div>
+
+
+{% endblock %}
